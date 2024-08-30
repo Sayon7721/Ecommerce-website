@@ -1,0 +1,74 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure the header content wraps if necessary */
+    padding: 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: grey;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the nav buttons wrap if there's not enough space */
+}
+
+.nav button {
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    max-width: 50px; /* Limit the maximum width of each button */
+    white-space: nowrap; /* Prevent text wrapping within the button */
+}
+
+.nav button:hover {
+    color: white;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #000;
+    width: 100%;
+}
+
+.footer-item {
+    color: grey;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-item:hover {
+    color: white;
+}
